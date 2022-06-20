@@ -1,0 +1,77 @@
+/*
+    设置登录框的样式
+*/
+#loginFrame {
+  width: 440px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px lightgrey;
+  background-color: #fff;
+
+  // 开启绝对定位
+  position: absolute;
+  // 在页面居中
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  span {
+    font-size: 16px;
+    color: darkred;
+    text-align: center;
+  }
+
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  div {
+    width: 100%;
+    text-align: center;
+
+    i {
+      font-size: 16px;
+    }
+
+    input {
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      height: 40px;
+      margin: 0 auto;
+      width: 60%;
+
+      padding-left: 15px;
+      box-sizing: border-box;
+
+
+      // 设置input中提示文字样式
+      &::placeholder {
+        color: lightgrey;
+      }
+
+      &:focus {
+        border: 1px rgb(53, 126, 166) solid;
+      }
+    }
+  }
+
+  button {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    height: 40px;
+    margin: 0 auto;
+    width: 30%;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(49, 93, 197);
+  }
+}

@@ -1,0 +1,186 @@
+// 顶部导航栏
+#top_bar_wrapper {
+    background-color: rgb(0, 166, 90);
+
+    #top_bar {
+        display: flex;
+        justify-content: space-between;
+        line-height: 50px;
+
+        a {
+            display: block;
+            color: white;
+        }
+
+        >a {
+            padding: 0 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .info {
+            display: flex;
+
+            h3 {
+                font-size: 18px;
+                padding: 0 20px;
+
+                a {
+                    font-size: 16px;
+                }
+
+                span {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: rgb(0, 149, 81);
+                }
+            }
+
+        }
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+
+    // 左侧导航栏
+    .left_nav {
+        height: 100%;
+        width: 18%;
+        background-color: rgb(34, 45, 50);
+
+        li {
+            line-height: 45px;
+
+            a {
+                padding-left: 20px;
+                color: rgb(184, 199, 206);
+                display: block;
+                border-left: 3px transparent solid;
+
+                &:hover {
+                    border-left: 3px rgb(0, 166, 90) solid;
+                }
+            }
+        }
+    }
+
+
+    // 用户管理
+    .user_manage {
+        width: 100%;
+        padding: 0 20px;
+        background-color: #fff;
+
+
+        h3 {
+            font-size: 20px;
+            line-height: 40px;
+            border-bottom: 1px lightgrey solid;
+            margin-bottom: 10px;
+        }
+
+        .add_and_search {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            span {
+                color: darkred;
+            }
+
+            button {
+                width: 60px;
+                height: 30px;
+            }
+
+
+            input {
+                height: 30px;
+            }
+        }
+
+        .user_info {
+            width: 100%;
+
+            th,
+            td {
+                border: 1px solid black;
+                text-align: center;
+                line-height: 30px;
+            }
+
+            th {
+                font-weight: bold;
+            }
+
+
+            tr {
+                &:nth-child(even) {
+                    background-color: rgb(229, 229, 229);
+                }
+            }
+        }
+    }
+}
+
+#editUser {
+    width: 30%;
+    height: 40%;
+    background-color: rgb(225, 238, 225);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+
+
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    table {
+        margin-left: 10px;
+
+        tr {
+            line-height: 50px;
+
+            td {
+
+                input,
+                select {
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 40px;
+        text-align: right;
+
+        button {
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(6, 89, 6);
+            margin-right: 30px;
+        }
+    }
+}

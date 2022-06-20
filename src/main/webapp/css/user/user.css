@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.main .user_manage {
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+}
+.main .user_manage h3 {
+  font-size: 20px;
+  line-height: 40px;
+  border-bottom: 1px lightgrey solid;
+  margin-bottom: 10px;
+}
+.main .user_manage .add_and_search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main .user_manage .add_and_search span {
+  color: darkred;
+}
+.main .user_manage .add_and_search button {
+  width: 60px;
+  height: 30px;
+}
+.main .user_manage .add_and_search input {
+  height: 30px;
+}
+.main .user_manage .user_info {
+  width: 100%;
+}
+.main .user_manage .user_info th,
+.main .user_manage .user_info td {
+  border: 1px solid black;
+  text-align: center;
+}
+.main .user_manage .user_info th {
+  font-weight: bold;
+}
+.main .user_manage .user_info tr {
+  line-height: 40px;
+}
+.main .user_manage .user_info tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+#editUser,
+#addUser {
+  width: 30%;
+  height: 50%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgrey;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+#editUser h3,
+#addUser h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+#editUser table,
+#addUser table {
+  margin-left: 10px;
+}
+#editUser table tr,
+#addUser table tr {
+  line-height: 50px;
+}
+#editUser table tr td input,
+#addUser table tr td input,
+#editUser table tr td select,
+#addUser table tr td select {
+  height: 30px;
+}
+#editUser .footer,
+#addUser .footer {
+  width: 100%;
+  margin-top: 40px;
+  text-align: right;
+}
+#editUser .footer button,
+#addUser .footer button {
+  width: 50px;
+  height: 30px;
+  color: white;
+  background-color: #065906;
+  margin-right: 30px;
+}
+/*# sourceMappingURL=./user.css.map */

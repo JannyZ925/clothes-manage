@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/user/user.css">
+</head>
+
+<body>
+
+    <form action="#" id="editUser">
+        <h3>用户信息</h3>
+        <table>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" readonly name="name"></td>
+            </tr>
+            <tr>
+                <td>用户密码：</td>
+                <td><input type="text" name="password"></td>
+            </tr>
+            <tr>
+                <td>用户角色：</td>
+                <td>
+                    <select name="role" id="user_role"><br />
+                        <option value="1">系统管理员</option>
+                        <option value="2">普通管理员</option>
+                        <option value="3">其他部门用户</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            <button>保存</button>
+            <button>关闭</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

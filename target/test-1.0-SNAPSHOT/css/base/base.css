@@ -1,0 +1,26 @@
+body {
+  background-image: url(../../img/login_bg.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+body input:focus {
+  outline: none;
+}
+@font-face {
+  font-family: 'iconfont';
+  /* Project id 3431559 */
+  src: url('//at.alicdn.com/t/font_3431559_q74lt61vj7c.woff2?t=1654421153768') format('woff2'), url('//at.alicdn.com/t/font_3431559_q74lt61vj7c.woff?t=1654421153768') format('woff'), url('//at.alicdn.com/t/font_3431559_q74lt61vj7c.ttf?t=1654421153768') format('truetype');
+}
+body .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*# sourceMappingURL=./base.css.map */
