@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.StockItemMapper">
+    <!--新增明细信息-->
+    <insert id="addStock_item" parameterType="domain.StockItem">
+        insert into stock_item(stock_id,product_id,amount)
+        values(#{stock_id},#{product_id},#{amount})
+    </insert>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.WarehouseMapper">
+    <!--新增仓库-->
+    <insert id="addWarehouse" parameterType="domain.Warehouse">
+        insert into warehouse(name,capacity)
+        values(#{name},#{capacity})
+    </insert>
+    <!--修改仓库信息-->
+    <update id="editWarehouse" >
+        update Warehouse
+        <trim prefix="set" suffixOverrides=",">
+            <if test="name != null" >
+                name = #{name},
+            </if>
+            <if test="capacity != null" >
+                capacity = #{capacity},
+            </if>
+        </trim>
+        where id = #{id}
+    </update>
+</mapper>

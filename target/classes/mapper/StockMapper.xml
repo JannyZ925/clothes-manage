@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.StockMapper">
+    <!--新增出入库-->
+    <insert id="addStockIn" parameterType="domain.Stock">
+        insert into stock(id,user_name,date,warehouse,origin_or_whereabouts,status,remarks)
+        values(#{id},#{user_name},#{date},#{warehouse},#{origin_or_whereabouts},#{status},#{remarks})
+    </insert>
+    <!--修改出入库信息-->
+    <update id="editStockIn" >
+        update stock
+        <trim prefix="set" suffixOverrides=",">
+            <if test="id != null" >
+                id = #{id},
+            </if>
+            <if test="user_name != null" >
+                user_name = #{user_name},
+            </if>
+            <if test="date != null" >
+                date = #{date},
+            </if>
+            <if test="warehouse != null" >
+                warehouse = #{warehouse},
+            </if>
+            <if test="origin_or_whereabouts != null" >
+                origin_or_whereabouts = #{origin_or_whereabouts},
+            </if>
+            <if test="remarks != null" >
+                remarks = #{remarks},
+            </if>
+        </trim>
+        where id = #{id}
+    </update>
+    <!--删除出入库单-->
+    <delete id="deleteStockIn">
+        delete from stock where id=#{id}
+    </delete>
+</mapper>

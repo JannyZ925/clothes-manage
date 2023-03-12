@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.main .stock_manage,
+.main .product_manage {
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+}
+.main .stock_manage h3,
+.main .product_manage h3 {
+  font-size: 20px;
+  line-height: 40px;
+  border-bottom: 1px lightgrey solid;
+  margin-bottom: 10px;
+}
+.main .stock_manage .add_and_search,
+.main .product_manage .add_and_search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main .stock_manage .add_and_search button,
+.main .product_manage .add_and_search button {
+  width: 60px;
+  height: 30px;
+}
+.main .stock_manage .add_and_search input,
+.main .product_manage .add_and_search input,
+.main .stock_manage .add_and_search select,
+.main .product_manage .add_and_search select {
+  height: 30px;
+}
+.main .stock_manage .add_and_search input:focus,
+.main .product_manage .add_and_search input:focus,
+.main .stock_manage .add_and_search select:focus,
+.main .product_manage .add_and_search select:focus {
+  outline: none;
+}
+.main .stock_manage .stock_info,
+.main .product_manage .stock_info,
+.main .stock_manage .product_info,
+.main .product_manage .product_info {
+  width: 100%;
+}
+.main .stock_manage .stock_info th,
+.main .product_manage .stock_info th,
+.main .stock_manage .product_info th,
+.main .product_manage .product_info th,
+.main .stock_manage .stock_info td,
+.main .product_manage .stock_info td,
+.main .stock_manage .product_info td,
+.main .product_manage .product_info td {
+  border: 1px solid black;
+  text-align: center;
+}
+.main .stock_manage .stock_info th,
+.main .product_manage .stock_info th,
+.main .stock_manage .product_info th,
+.main .product_manage .product_info th {
+  font-weight: bold;
+}
+.main .stock_manage .stock_info tr,
+.main .product_manage .stock_info tr,
+.main .stock_manage .product_info tr,
+.main .product_manage .product_info tr {
+  line-height: 40px;
+}
+.main .stock_manage .stock_info tr:nth-child(even),
+.main .product_manage .stock_info tr:nth-child(even),
+.main .stock_manage .product_info tr:nth-child(even),
+.main .product_manage .product_info tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+.main .stock_manage .stock_info tr td a,
+.main .product_manage .stock_info tr td a,
+.main .stock_manage .product_info tr td a,
+.main .product_manage .product_info tr td a {
+  text-decoration: underline;
+  color: #007ba4;
+}
+#editStockOut,
+#addStockOut {
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgrey;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+#editStockOut h3,
+#addStockOut h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+#editStockOut table,
+#addStockOut table {
+  margin-left: 10px;
+}
+#editStockOut table tr,
+#addStockOut table tr {
+  line-height: 50px;
+}
+#editStockOut table tr td input,
+#addStockOut table tr td input,
+#editStockOut table tr td select,
+#addStockOut table tr td select {
+  height: 30px;
+}
+#editStockOut .footer,
+#addStockOut .footer {
+  width: 100%;
+  margin-top: 40px;
+  text-align: right;
+}
+#editStockOut .footer button,
+#addStockOut .footer button {
+  width: 50px;
+  height: 30px;
+  color: white;
+  background-color: #065906;
+  margin-right: 30px;
+}
+/*# sourceMappingURL=./main.css.map */
